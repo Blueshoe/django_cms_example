@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for category in category_list %}
+        <ul>
+            <li><a href="{% url 'showroom:artpiece_list' category.id %}">{{ category.name }}</a></li>
+        </ul>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for artpiece in artpiece_list %}
+        <ul>
+            <li>{{ artpiece.name }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
