@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from showroom.models import ArtPiece, Category
+
+
+@admin.register(ArtPiece)
+class ArtPieceAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Category)
+class ShowroomCategoryAdmin(admin.ModelAdmin):
+    pass
